@@ -1,14 +1,10 @@
 import './app.scss';
+import Main from './components/main/Main';
 
 function App() {
   return (
     <>
-      <div className="app">
-        App
-      </div>
-      <div className="bottom">
-        Bottom
-      </div>
+      <Main />
     </>
   );
 }
