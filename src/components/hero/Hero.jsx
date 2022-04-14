@@ -1,8 +1,6 @@
 import { ArrowForwardRounded } from '@mui/icons-material'
-import { FaGooglePlay } from "react-icons/fa"
 import React from 'react'
 import freshinabox from '../../assets/freshinabox.svg'
-import freshideas from '../../assets/freshideas-ecomm.png'
 import './hero.scss'
 
 function Hero() {

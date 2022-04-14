@@ -1,5 +1,7 @@
 import React from 'react'
+import { ArrowForwardRounded } from '@mui/icons-material'
 import freshinabox from '../../assets/freshinabox.svg'
+import data from './data'
 import './customer.scss'
 
 function Customers() {
@@ -13,28 +15,24 @@ function Customers() {
         </div>
         <div className="bottom">
             <div className="customer-group">
-                <div className="customer">
-                    <div className="left">
-                        <img 
-                            src={freshinabox}
-                            alt="" 
-                        />
+                {data.map(customer => (
+                    <div key={customer.id} className="customer">
+                        <div className="left">
+                            <img 
+                                src={customer.logo}
+                                alt="" 
+                            />
+                        </div>
+                        <div className="right">
+                            <p className="title">{customer.title}</p>
+                            <p className="category">{customer.category}</p>
+                            <p className="description">{customer.description}</p>
+                            <a href={customer.link} className="link">
+                                <span>{customer.linkText} <ArrowForwardRounded className='icon'/> </span>
+                            </a>
+                        </div>
                     </div>
-                    <div className="right">
-                        <p>Customer Data</p>
-                    </div>
-                </div>
-                <div className="customer">
-                    Customer B
-                </div>
-            </div>
-            <div className="customer-group">
-                <div className="customer">
-                    Customer C
-                </div>
-                <div className="customer">
-                    Customer D
-                </div>
+                ))}                
             </div>
         </div>
     </div>
