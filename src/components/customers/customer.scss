@@ -26,17 +26,17 @@
 
     .bottom {
         width: 100%;
+        margin-bottom: 30px;
         
         .customer-group {
             display: flex;
-            // flex-direction: row;
             flex-wrap: wrap;
 
             .customer {
                 flex: 1 0 50%;
                 width: 50%;
                 border: 1px solid #e2e8f0;
-                height: 220px;
+                height: 200px;
                 padding: 30px;
 
                 display: flex;
@@ -78,6 +78,8 @@
                     .description {
                         font-family: 'Inter';
                         margin-bottom: 10px;
+                        color: #4a5568;
+                        line-height: 1.5rem;
                     }
                     
                     .link {
