@@ -4,7 +4,7 @@ import './pricing.scss'
 
 function Pricing() {
     return (
-        <div className="pricing">
+        <div className="pricing" id="pricing">
             <h1 className="title">Pricing</h1>
             <p className="description">Our technology is priced to suit your business needs</p>
             <div className="main-price">

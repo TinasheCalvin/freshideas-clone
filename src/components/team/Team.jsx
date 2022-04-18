@@ -12,7 +12,7 @@ import theo from '../../assets/profile/theo.jpg'
 
 function Team() {
   return (
-    <div className="team">
+    <div className="team" id="team">
         <h2 className="title">Our Team</h2>
         <p className="description">Our diverse team works hard to bring you awesome tech to build your business on.</p>
         <div className="members">

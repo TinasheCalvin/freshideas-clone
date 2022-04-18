@@ -20,8 +20,19 @@ nav {
             width: 100%;
             list-style: none;
             gap: 30px;
-            color: white;
-            font-size: 20px;
+
+            li {
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 20px;
+                }
+
+                a:hover {
+                    color: #a3e0c0;
+                    cursor: pointer;
+                }
+            }
         }
     }
 

@@ -6,7 +6,7 @@ import './customer.scss'
 
 function Customers() {
   return (
-    <div className="customers">
+    <div className="customers" id="customers">
         <div className="top">
             <h1 className="title">Trusted by some prominent brands</h1>
             <p className="description">
