@@ -1,3 +1,6 @@
+$screen-md : 768px;
+$screen-sm: 300px;
+
 .hero {
     margin: 60px 30px;
     display: flex;
@@ -125,4 +128,52 @@
             object-fit: cover;
         }
     }
+}
+
+@media screen and (max-width: $screen-md) and (min-width: $screen-sm) {
+    .hero {
+        flex-direction: column;
+        justify-items: center;
+
+        .left {
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            .description {
+                text-align: center;
+                margin: 0px 30px 20px 30px;
+            }
+
+            .btn-group > .btn {
+                height: 50px;
+                width: 160px;
+                padding: 10px;
+
+                .btn-left > svg {
+                    width: 25px;
+                }
+
+                .btn-right > .bottom,.top {
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .right {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+
+            img {
+                margin-top: 20px;
+                width: 80%;
+                height: 80%;
+            }
+        }
+    }
+
 }
