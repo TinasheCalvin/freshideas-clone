@@ -1,12 +1,17 @@
+@import "../../global.scss";
+
+// %max-height {
+//     @include laptop-viewport { height: 100%; }
+//     @include tablet-lg-viewport { height: 100%; }
+// }
+
 .main {
     background-color: #1A202C;
     height: 100vh;
     color: #FFFFFF;
     padding: 10px;
-}
 
-@media screen and (max-width: 768px) {
-    .main {
-        height: 100%
-    }
+    @include laptop-viewport { height: 100%; }
+    @include tablet-lg-viewport { height: 100%; }
+    @include tablet-viewport { height: 100%; }
 }

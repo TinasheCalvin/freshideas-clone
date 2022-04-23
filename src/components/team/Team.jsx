@@ -43,8 +43,6 @@ function Team() {
                     <p className="role">Director {'&'} Senior Software Engineer</p>
                 </div>
             </div>
-        </div>
-        <div className="members">
             <div className="member">
                 <div className="left">
                     <img src={cyprian} alt="alternative" />
@@ -72,8 +70,6 @@ function Team() {
                     <p className="role">Software Engineer</p>
                 </div>
             </div>
-        </div>
-        <div className="members">
             <div className="member">
                 <div className="left">
                     <img src={theo} alt="alternative" />

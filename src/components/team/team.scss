@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .team {
     width: 100%;
     height: 100%;
@@ -5,9 +7,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+ 
+    @include tablet-lg-viewport { margin: 10px 50px;}
+    @include tablet-viewport { margin: 10px; }
 
     .title, .description {
-        align-self: center;
+        text-align: center;
         color: #4a5568;
     }
 
@@ -23,17 +28,22 @@
 
     .members {
         display: flex;
-        justify-content: space-between;
         flex-wrap: wrap;
         gap: 20px;
         margin: 10px;
 
+        @include tablet-lg-viewport { margin: 10px auto; }
+        @include tablet-viewport { margin: 10px auto; }
+
         .member {
-            flex:1;
+            flex:0 0 30%;
             padding: 10px;
             border: 1px solid #e2e8f0;
             border-radius: 5px;
             display: flex;
+
+            @include tablet-lg-viewport { flex: 0 0 45%; }
+            @include tablet-viewport { flex: 0 0 45%; }
 
             .left {
                 flex: 1;

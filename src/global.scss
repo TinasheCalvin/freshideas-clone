@@ -1,0 +1,32 @@
+// defining all screen sizes
+$screen-sm: 640px;
+$screen-md: 768px;
+$screen-lg: 1024px;
+$screen-xl: 1280px;
+
+// mixins to cater for different viewport sizes
+@mixin mobile-viewport {
+    @media screen and (max-width: $screen-sm) {
+        @content
+    }
+};
+
+@mixin tablet-viewport {
+    @media screen and (min-width: $screen-sm) and (max-width: $screen-md) {
+        @content
+    }
+};
+
+@mixin tablet-lg-viewport {
+    @media screen and (min-width: $screen-md) and (max-width: $screen-lg){
+        @content
+    }
+};
+
+@mixin laptop-viewport {
+    @media screen and (min-width: $screen-lg) and (max-width: $screen-xl) {
+        @content
+    }
+};
+
+

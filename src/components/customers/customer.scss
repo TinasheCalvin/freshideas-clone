@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .customers {
     height: 100%;
     padding: 30px;
@@ -29,22 +31,34 @@
         width: 100%;
         margin-bottom: 30px;
         
+        @include laptop-viewport {
+            margin: 0px;
+        }
+        
         .customer-group {
             display: flex;
             flex-wrap: wrap;
 
             .customer {
-                flex: 1 0 50%;
-                width: 50%;
+                flex: 0 0 50%;
                 border: 1px solid #e2e8f0;
                 height: 200px;
                 padding: 30px;
-
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
                 width: 100%;
                 gap: 30px;
+
+                @include laptop-viewport {
+                    height: 220px;
+                }
+                @include tablet-lg-viewport {
+                    flex: 0 0 100%;
+                }
+                @include tablet-viewport {
+                    flex: 0 0 100%;
+                }
 
                 .left {
                     flex: 1;
@@ -57,7 +71,6 @@
                     img {
                         height: 100%;
                         width: 100%;
-                        // object-fit: cover
                     }
                 }
 

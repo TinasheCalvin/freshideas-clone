@@ -52,6 +52,15 @@ let data = [
         description: "A platform for managing waste at homes. Just reach out and we will make your waste disappear.",
         link: "https://plusvans.co.uk/",
         linkText: "Visit Plusvans Website"
+    },
+    {
+        id: 7,
+        logo: "https://res.cloudinary.com/fresh-ideas/image/upload/v1599154869/logos/freshinabox.co.zw.svg",
+        title: "Fresh In a Box",
+        category: "Grocery Shopping",
+        description: "Get the best of Zimbabwean Veg, meat and shopping delivered free to your door in Zimbabwe.",
+        link: "https://freshinabox.co.zw",
+        linkText: "Visit Fresh In A Box Website"
     }
 ]
 
