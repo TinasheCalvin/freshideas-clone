@@ -7,10 +7,8 @@ nav {
     align-items: center;
     justify-content: space-between;
 
-    @include tablet-viewport {
-        flex-direction: column;
-        justify-content: center;
-    };
+    @include tablet-viewport { flex-direction: column; justify-content: center; };
+    @include mobile-viewport { flex-direction: column; justify-content: center; };
 
     .nav-logo {
         width: 150px;
@@ -27,6 +25,8 @@ nav {
             width: 100%;
             list-style: none;
             gap: 30px;
+
+            @include mobile-viewport { flex-wrap: wrap; };
 
             li {
                 a {

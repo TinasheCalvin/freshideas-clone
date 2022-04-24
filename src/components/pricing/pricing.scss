@@ -5,6 +5,7 @@
     @include laptop-viewport { flex-wrap: wrap; justify-content: center; }
     @include tablet-lg-viewport { flex-wrap: wrap; justify-content: center; }
     @include tablet-viewport { flex-wrap: wrap; justify-content: center; }
+    @include mobile-viewport { flex-wrap: wrap; justify-content: center; }
 }
 
 %wrap-addon {
@@ -21,7 +22,7 @@
     flex-direction: column;
 
     .title, .description {
-        align-self: center;
+        text-align: center;
         color: #4a5568;
     }
 
@@ -83,6 +84,8 @@
             padding-bottom: 20px;
             border-bottom: 1px solid #e2e8f0;
 
+            @include mobile-viewport { flex-direction: column; align-items: flex-start; }
+
             .price {
                 color: #4a5568;
                 font-weight: 800;
@@ -102,6 +105,8 @@
                 width: 280px;
                 cursor: pointer;
                 text-decoration: none;
+
+                @include mobile-viewport { height: 50px; width: 240px; margin-top: 10px; }
 
                 .icon {
                     font-size: 18px;
@@ -129,6 +134,8 @@
                 gap: 5px;
                 align-items: center;
                 margin-bottom: 10px;
+
+                @include mobile-viewport { flex: 1 0 60%; font-size: 18px;}
 
                 .icon {
                     font-size: 18px;
@@ -172,6 +179,7 @@
             @include laptop-viewport { flex: 0 0 45%;height: 230px; }
             @include tablet-lg-viewport { flex: 0 0 45%;height: 230px; }
             @include tablet-viewport { flex: 0 0 100%;height: 230px; }
+            @include mobile-viewport { flex: 0 0 100%;height: 230px; }
 
             .addon {
                 display: inline-block;

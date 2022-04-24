@@ -28,12 +28,12 @@ let data = [
     },
     {
         id: 4,
-        logo: "https://res.cloudinary.com/zimspicefi/image/upload/v1615537752/zimspicelogo_itjrhp_onvuqq.png",
-        title: "Zimspice",
-        category: "Healthy Lifestyle",
-        description: "Zimspice is here to provide you with all your spice needs!",
-        link: "https://shop.zimspice.co.zw/",
-        linkText: "Visit Zimspice Website"
+        logo: "https://res.cloudinary.com/lamasatfi/image/upload/v1615968332/Web_Store_PNG_coklnj.png",
+        title: "Lamasat",
+        category: "Water and Home",
+        description: "All things H20 and Home",
+        link: "https://lamasat.netlify.app/shop",
+        linkText: "Visit Lamasat Website"
     },
     {
         id: 5,
@@ -55,13 +55,13 @@ let data = [
     },
     {
         id: 7,
-        logo: "https://res.cloudinary.com/fresh-ideas/image/upload/v1599154869/logos/freshinabox.co.zw.svg",
-        title: "Fresh In a Box",
-        category: "Grocery Shopping",
-        description: "Get the best of Zimbabwean Veg, meat and shopping delivered free to your door in Zimbabwe.",
-        link: "https://freshinabox.co.zw",
-        linkText: "Visit Fresh In A Box Website"
-    }
+        logo: "https://res.cloudinary.com/zimspicefi/image/upload/v1615537752/zimspicelogo_itjrhp_onvuqq.png",
+        title: "Zimspice",
+        category: "Healthy Lifestyle",
+        description: "Zimspice is here to provide you with all your spice needs!",
+        link: "https://shop.zimspice.co.zw/",
+        linkText: "Visit Zimspice Website"
+    },
 ]
 
 export default data

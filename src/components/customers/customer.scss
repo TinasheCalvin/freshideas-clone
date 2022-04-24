@@ -16,6 +16,9 @@
             font-size: 48px;
             color: #4a5568;
             margin-bottom: 20px;
+
+            @include mobile-viewport { font-size: 32px; }
+
         }
 
         .description {
@@ -24,6 +27,9 @@
             line-height: 2.5rem;
             width: 65%;
             margin-bottom: 20px;
+
+            @include mobile-viewport { width: 100%; }
+
         }
     }
 
@@ -50,15 +56,10 @@
                 width: 100%;
                 gap: 30px;
 
-                @include laptop-viewport {
-                    height: 220px;
-                }
-                @include tablet-lg-viewport {
-                    flex: 0 0 100%;
-                }
-                @include tablet-viewport {
-                    flex: 0 0 100%;
-                }
+                @include laptop-viewport { height: 220px; }
+                @include tablet-lg-viewport { flex: 0 0 100%; }
+                @include tablet-viewport { flex: 0 0 100%; }
+                @include mobile-viewport { flex-direction: column; align-items: center; flex: 0 0 100%; height: 100% }
 
                 .left {
                     flex: 1;
@@ -72,12 +73,16 @@
                         height: 100%;
                         width: 100%;
                     }
+
+                    @include mobile-viewport { height: 50%; width: 50%;}
                 }
 
                 .right {
                     flex: 2;
                     width: 100%;
                     height: 100%;
+
+                    @include mobile-viewport { align-self: center; }
 
                     .title {
                         font-size: 18px;

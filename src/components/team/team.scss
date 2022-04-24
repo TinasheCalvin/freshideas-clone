@@ -10,6 +10,7 @@
  
     @include tablet-lg-viewport { margin: 10px 50px;}
     @include tablet-viewport { margin: 10px; }
+    @include mobile-viewport { margin: 10px; }
 
     .title, .description {
         text-align: center;
@@ -34,6 +35,7 @@
 
         @include tablet-lg-viewport { margin: 10px auto; }
         @include tablet-viewport { margin: 10px auto; }
+        @include mobile-viewport { margin: 10px auto; }
 
         .member {
             flex:0 0 30%;
@@ -44,6 +46,7 @@
 
             @include tablet-lg-viewport { flex: 0 0 45%; }
             @include tablet-viewport { flex: 0 0 45%; }
+            @include mobile-viewport { flex: 0 0 100%; }
 
             .left {
                 flex: 1;

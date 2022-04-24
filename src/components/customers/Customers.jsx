@@ -27,7 +27,7 @@ function Customers() {
                             <p className="title">{customer.title}</p>
                             <p className="category">{customer.category}</p>
                             <p className="description">{customer.description}</p>
-                            <a href={customer.link} className="link">
+                            <a href={customer.link} className="link" target="_blank" rel="noreferrer">
                                 <span>{customer.linkText} <ArrowForwardRounded className='icon'/> </span>
                             </a>
                         </div>

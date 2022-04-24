@@ -1,5 +1,4 @@
-$screen-md : 768px;
-$screen-sm: 300px;
+@import "../../global.scss";
 
 .hero {
     margin: 60px 30px;
@@ -7,19 +6,31 @@ $screen-sm: 300px;
     align-items: center;
     justify-content: space-around;
 
+    @include mobile-viewport { 
+        flex-direction: column; 
+        justify-content: center; 
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
     .left {
         flex: 2;
         padding-right: 50px;
 
+        @include mobile-viewport { display: flex; flex-direction: column; justify-content: center; }
+
         .title {
             font-size: 60px;
             margin-bottom: 20px;
+            @include mobile-viewport { font-size: 32px; align-self: center;}
         }
 
         .description {
             font-size: 32px;
             margin-bottom: 20px;
             line-height: 3rem;
+
+            @include mobile-viewport { text-align: center; font-size: 28px}
         }
 
         .product {
@@ -27,6 +38,8 @@ $screen-sm: 300px;
             display: flex;
             align-items: center;
             flex-direction: row;
+
+            @include mobile-viewport { justify-content: center;}
 
             .product-img {
                 width: 80px;
@@ -76,6 +89,8 @@ $screen-sm: 300px;
             align-items: center;
             flex-direction: row;
             gap: 20px;
+
+            @include mobile-viewport {flex-direction: column;}
             
             .btn {
                 display: flex;
@@ -113,6 +128,8 @@ $screen-sm: 300px;
                         align-self: flex-start;
                         font-weight: 600;
                         font-size: 14px;
+
+                        @include mobile-viewport { font-size: 12px; }
                     }
                 }
             }
@@ -125,7 +142,8 @@ $screen-sm: 300px;
         img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            // object-fit: cover;
+
         }
     }
 }
