@@ -13,7 +13,7 @@ function Pricing() {
                 <h4>Website Only.</h4>
                 <div className="fresh-store">
                     <h1 className="price">$99/month paid monthly.</h1>
-                    <a href="mailto:hello@freshideas.co.zw?subject=Interested%20in%20the%20Standard%20Medium%20Store%20Package" className="link">
+                    <a href="mailto:hello@freshideas.co.zw?subject=Interested%20in%20the%20Standard%20Medium%20Store%20Package" className="link" target="_blank" rel="noreferrer">
                         <span className="text">Buy freshstore </span><ArrowForwardRounded className='icon'/>
                     </a>
                 </div>
@@ -51,7 +51,7 @@ function Pricing() {
                     </span>
                 </div>
                 <div className="brochure">
-                    <a href="https://res.cloudinary.com/freshinabox/image/upload/v1613373003/Fresh_Store_Brochure-2021_lrnkeu.pdf">Download Brochure</a>
+                    <a href="https://res.cloudinary.com/freshinabox/image/upload/v1613373003/Fresh_Store_Brochure-2021_lrnkeu.pdf" target="_blank" rel="noreferrer">Download Brochure</a>
                 </div>
             </div>
             <h1 className="title">Add Ons</h1>

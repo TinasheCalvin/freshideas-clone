@@ -11,9 +11,9 @@ function Footer() {
             <p className="copyright">&copy; 2022 freshideas</p>
         </div>
         <div className="right">
-            <a href="https://www.facebook.com/freshideaszim/"><FaFacebookF className='icon react-icons'/></a>
-            <a href="https://twitter.com/freshideaszw"><Twitter className='icon' /></a>
-            <a href="https://instagram.com/freshideaszim"><Instagram className='icon' /></a>
+            <a href="https://www.facebook.com/freshideaszim/" target="_blank" rel="noreferrer"><FaFacebookF className='icon react-icons'/></a>
+            <a href="https://twitter.com/freshideaszw" target="_blank" rel="noreferrer"><Twitter className='icon' /></a>
+            <a href="https://instagram.com/freshideaszim" target="_blank" rel="noreferrer"><Instagram className='icon' /></a>
         </div>
     </div>
   )

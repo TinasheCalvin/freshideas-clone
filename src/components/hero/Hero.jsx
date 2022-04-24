@@ -17,7 +17,7 @@ function Hero() {
           </div>
           <div className="product-info">
             <h5 className="title">Our flagship product</h5>
-            <a href="https://freshinabox.co.zw" alt="">
+            <a href="https://freshinabox.co.zw" alt="" target="_blank" rel="noreferrer">
               <span>freshinabox.co.zw <ArrowForwardRounded className='icon'/> </span>
             </a>
           </div>
