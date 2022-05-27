@@ -17,7 +17,7 @@ function Navbar() {
                     smooth={true}
                     duration={500}
                   >
-                    Our Customers
+                    <span>Our Customers</span>
                   </Link>
                 </li>
                 <li>
@@ -27,7 +27,7 @@ function Navbar() {
                     smooth={true}
                     duration={500}
                   >
-                    Plans
+                    <span>Plans</span>
                   </Link>
                 </li>
                 <li>
@@ -37,11 +37,13 @@ function Navbar() {
                     smooth={true}
                     duration={500}
                   >
-                    The Team
+                    <span>The Team</span>
                   </Link>
                 </li>
                 <li>
-                  <a href="https://dev.to/freshideas" target="_blank" rel="noreferrer">Blog</a>
+                  <a href="https://dev.to/freshideas" target="_blank" rel="noreferrer">
+                    <span>Blog</span>
+                  </a>
                 </li>
             </ul>
         </div>

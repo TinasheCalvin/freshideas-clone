@@ -37,7 +37,7 @@ let data = [
     },
     {
         id: 5,
-        logo: "https://res.cloudinary.com/freshideas/image/upload/v1618302061/logo_600x600_pojiue.png",
+        logo: "https://dcassetcdn.com/design_img/3665567/603845/603845_21204372_3665567_0e2a1da4_image.png",
         title: "Poolplaza",
         category: "Pool Care",
         description: "Zimbabwe's best online pool shop. Pool Construction, Service and Repairs.",
